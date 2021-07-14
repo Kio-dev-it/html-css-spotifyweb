@@ -5,4 +5,85 @@
     padding: 0;
     box-sizing: border-box;
 }
-                                                                                           
+
+
+/* Main */
+
+main{
+    height:calc(100vh - 90px);
+    display: flex;
+}
+
+/* Aside */
+aside{
+    background-color: coral;
+    width: 230px;
+}
+
+.aside-top, .user{
+    color: white;
+    font-size: 20px;
+}
+
+.aside-center{
+    height: calc(100% - 180px);
+}
+
+.aside-logo{
+    background-color: darkgreen;
+    height: 90px;
+}
+
+.aside-nav{
+    height: 90px;
+}
+
+.playlist{
+    background-color: darkturquoise;
+    height: 75px;
+}
+
+.playlist-list{
+    overflow-y: auto;
+    min-height: 200px;
+    height: calc(100% - 160px);
+}
+
+.user{
+    height: 85px;
+    background-color: darkorchid;
+}
+
+/* Music Section */
+
+.music{
+    position: relative;
+    height: 100%;
+    background-color: cadetblue;
+    width: calc(100% - 230px);
+    overflow-y: auto;
+}
+
+.upgrade{
+    position: fixed;
+    top:0;
+    right: 0;
+    z-index: 2;
+    width: calc(100% - 230px);
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: right;
+    height: 90px;
+    line-height: 90px;
+    color: rgb(255, 255, 255);
+}
+
+/* Footer */
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    height: 90px;
+    background-color: darkgoldenrod;
+}

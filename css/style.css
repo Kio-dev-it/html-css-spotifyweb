@@ -52,15 +52,19 @@ aside{
     height: 90px;
 }
 
+.aside-nav-label{
+    vertical-align: middle;
+}
+
 .aside-nav ul li:first-child a{
     color: #fff;
 }
 
 .aside-nav li{
-    padding: 3px 20px;
+    padding: 4px 20px;
 }
 
-a img{
+.aside-nav img{
     height: 22px;
     vertical-align: middle;
     margin-right: 5px;

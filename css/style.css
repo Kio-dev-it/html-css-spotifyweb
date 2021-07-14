@@ -9,13 +9,12 @@
 /* Common */
 
 body{
-    color: #fff;
     font-family: 'Montserrat', sans-serif;
 }
 
 a{
     text-decoration: none;
-    color: #fff;
+    color: #a3a3a3;
 }
 
 ul{
@@ -34,6 +33,10 @@ main{
 aside{
     background-color: #000000;
     width: 230px;
+    font-size: 12px;
+    color: #a3a3a3;
+    font-weight: 800;
+
 }
 
 .aside-top .aside-logo{
@@ -45,9 +48,15 @@ aside{
     height: 45px;
 }
 
-.aside-top li{
-    font-size: 12px;
-    font-weight: 800;
+.aside-nav{
+    height: 90px;
+}
+
+.aside-nav ul li:first-child a{
+    color: #fff;
+}
+
+.aside-nav li{
     padding: 3px 20px;
 }
 
@@ -57,18 +66,42 @@ a img{
     margin-right: 5px;
 }
 
-
-.aside-center{
+.aside-bottom{
     height: calc(100% - 180px);
-}
-
-.aside-nav{
-    height: 90px;
+    padding: 20px 20px 0 20px;
 }
 
 .playlist{
-    background-color: darkturquoise;
     height: 75px;
+}
+
+.playlist p:first-child{
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.playlist p:nth-child(2){
+    font-size: 14px;
+}
+
+.back-plus{
+    display: inline-block;
+    position: relative;
+    background-color: #a3a3a3;
+    height: 36px;
+    width: 36px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.plus{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    font-size: 18px;
+    padding: 15px;
 }
 
 .playlist-list{

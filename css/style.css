@@ -270,9 +270,59 @@ main{
 
 footer{
     position: fixed;
+    display: flex;
+    justify-content: space-between;
     bottom: 0;
     width: 100%;
     z-index: 1;
     height: 90px;
-    background-color: darkgoldenrod;
+    background-color: #282828;
+}
+
+.footer-left{
+    color:#a3a3a3;
+    width: 230px;
+    padding : 25px 0 25px 10px;
+}
+
+.playing{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playing__logo{
+    width: 20%;
+}
+
+.playing__text{
+    width: 50%;
+    font-weight: 600;
+    padding-left: 6px;
+}
+
+.playing__artist{
+    color: #ffffff;
+}
+
+.playing__icons{
+    width:30%;
+    font-size: 16px;
+}
+
+.fa-heart{
+    margin-right: 5px;
+}
+
+.playing__icons{
+    padding-right: 10px;
+}
+
+.playing, .playing__logo, .playing__image{
+    height: 100%;
+}
+
+.playing__logo, .playing__text, .playing__icons{
+    display: inline-block;
+    font-size: 12px;
 }

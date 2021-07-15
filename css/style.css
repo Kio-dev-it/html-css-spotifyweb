@@ -233,14 +233,14 @@ h2{
 .card{
     margin-top: 25px;
     padding: 3px;
+    width: calc(100% / 6);
     text-align: center;
 }
 
 .card__image{
-    height: 180px;
-    width: 180px;
-    background-color: coral;
+    width: 100%;
 }
+
 .card__title{
     margin-top: 20px;
     color: #ffffff;

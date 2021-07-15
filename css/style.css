@@ -80,7 +80,7 @@ main{
 
 .list-icon__item--active{
     color: #fff;
-    border-left: 2px solid lawngreen;
+    border-left: 2px solid #adff2f;
 }
 
 .playlist{
@@ -205,6 +205,19 @@ main{
     color: #a3a3a3;
     padding: 10px;
 }
+
+.horizontal-nav__link--active::after{
+    position: absolute;
+    content: '';
+    display: block;
+    bottom:5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #adff2f;
+    height: 2px;
+    width: 30px;
+}
+
 
 
 /* Footer */

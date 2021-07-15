@@ -160,12 +160,23 @@ main{
     top:0;
     right: 0;
     z-index: 2;
+    padding: 20px;
     width: calc(100% - 230px);
     background-color: rgba(0, 0, 0, 0.6);
     text-align: right;
     height: 90px;
-    line-height: 90px;
+    line-height: 50px;
     color: rgb(255, 255, 255);
+}
+
+.upgrade__link{
+    padding: 10px 45px;
+    font-size: 12px;
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 1px solid #ffffff;
+    border-radius: 2rem;
 }
 
 /* Footer */

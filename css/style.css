@@ -30,65 +30,69 @@ main{
 }
 
 /* Aside */
-aside{
+.aside{
+    display: flex;
+    flex-direction: column;
     background-color: #000000;
     width: 230px;
+    padding-top: 20px;
     font-size: 12px;
     color: #a3a3a3;
-    font-weight: 800;
-
+    font-weight: 600;
 }
 
-.aside-top .aside-logo{
-    height: 90px;
-    padding: 20px;
+.logo,
+.aside__nav,
+.playlist,
+.aside__bottom{
+    flex-shrink: 0;
 }
 
-.aside-top .logo{
+.logo,
+.playlist,
+.playlist-selection,
+.aside__bottom{
+    padding: 0 20px;
+}
+
+.logo{
+    margin-bottom: 20px;
+}
+
+.logo_image{
     height: 45px;
 }
 
-.aside-nav{
-    height: 90px;
+.list-icon__item{
+    padding: 6px 20px;
+    border-left: 2px solid #000000;
 }
 
-.aside-nav-label{
-    vertical-align: middle;
-}
-
-.aside-nav ul li:first-child a{
-    color: #fff;
-}
-
-.aside-nav li{
-    padding: 4px 20px;
-}
-
-.aside-nav img{
+.list-icon__image{
     height: 22px;
     vertical-align: middle;
     margin-right: 5px;
 }
 
-.aside-bottom{
-    height: calc(100% - 180px);
-    padding: 20px 20px 0 20px;
+.list-icon__label{
+    vertical-align: middle;
+}
+
+.list-icon__item--active{
+    color: #fff;
+    border-left: 2px solid lawngreen;
 }
 
 .playlist{
-    height: 75px;
+    margin: 25px 0 20px 0;
 }
 
-.playlist p:first-child{
-    margin-bottom: 15px;
+.playlist__title{
+    margin-bottom: 18px;
     color: #fff;
 }
 
-.playlist p:nth-child(2){
-    font-size: 14px;
-}
-
-.back-plus{
+.playlist__icon{
     display: inline-block;
     position: relative;
     background-color: #a3a3a3;
@@ -98,41 +102,38 @@ aside{
     vertical-align: middle;
 }
 
-.plus{
+.playlist__symbol{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #000000;
-    font-size: 18px;
-    padding: 15px;
+    font-size: 28px;
 }
 
-.playlist-list{
+.playlist-selection{
     overflow-y: auto;
-    min-height: 80px;
-    height: calc(100% - 160px);
+    flex-grow: 1;
 }
 
-.playlist-list li{
-    padding: 3px 0;
-    margin: 20px 0;
+.playlist-selection__item{
+    padding: 10px 0;
 }
 
-.app{
+.app-download{
     padding: 12px 0;
     border-bottom: 1px solid #a3a3a3;
 }
 
-.install-app i{
+.app-download__icon{
     margin-right: 10px;
 }
 
-.user{
+.profile{
     margin: 15px 0 8px 0;
 }
 
-.user-image{
+.profile__image{
     height: 25px;
     vertical-align: middle;
     margin-right: 10px;
@@ -140,7 +141,7 @@ aside{
     border-radius: 50%;
 }
 
-.user-name{
+.profile__name{
     display: inline-block;
 }
 

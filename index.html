@@ -18,62 +18,64 @@
         <title>BoolTify</title>
     </head>
     <body>
+
+        <!-- Main -->
         <main>
             <!-- sidebar -->
-            <aside>
-                <div class="aside-top">
-                    <div class="aside-logo">
-                        <img class="logo" src="./img/logo.svg" alt="Spotify Logo">
+            <aside class="aside">
+                
+                    <div class="logo">
+                        <img class="logo__image" src="./img/logo.svg" alt="Spotify Logo">
                     </div>
-                    <nav class="aside-nav">
-                        <ul>
-                            <li>
-                                <a href="#"><img src="./img/home.svg" alt=""> 
-                                    <span class="aside-nav-label">Home</span>
+
+                    <nav class="aside__nav">
+                        <ul class="list-icon">
+                            <li class="list-icon__item list-icon__item--active">
+                                <a href="#" class="list-icon__link list-icon__link--active"><img src="./img/home.svg" alt="" class="list-icon__image"> 
+                                    <span class="list-icon__label">Home</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#"><img src="./img/search.svg" alt=""> 
-                                    <span class="aside-nav-label">Cerca</span>
+                            <li class="list-icon__item">
+                                <a href="#"><img src="./img/search.svg" alt="" class="list-icon__image"> 
+                                    <span class="list-icon__label">Cerca</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#"><img src="./img/libreria.svg" alt=""> 
-                                    <span class="aside-nav-label">La tua libreria</span>
+                            <li class="list-icon__item">
+                                <a href="#"><img src="./img/libreria.svg" alt="" class="list-icon__image"> 
+                                    <span class="list-icon__label">La tua libreria</span>
                                 </a>
                             </li>
                         </ul>
                     </nav>
-                </div>
-                <div class="aside-bottom">
+
                     <div class="playlist">
-                        <p>PLAYLIST</p>
-                        <p><div class="back-plus"><span class="plus">+</span></div>Crea Playlist</p>
+                        <p class="playlist__title">PLAYLIST</p>
+                        <p class="playlist__create"><div class="playlist__icon"><span class="playlist__symbol">+</span></div>Crea Playlist</p>
                     </div>
 
-                    <div class="playlist-list">
-                        <ul>
-                            <li>Nuova Playlist</li>
-                            <li>Nuova Playlist</li>
-                            <li>Nuova Playlist</li>
-                            <li>Nuova Playlist</li>
-                            <li>Nuova Playlist</li>
-                            <li>Nuova Playlist</li>
-                            <li>Nuova Playlist</li>
+                    <div class="playlist-selection">
+                        <ul class="playlist-selection__list">
+                            <li class="playlist-selection__item">Nuova Playlist</li>
+                            <li class="playlist-selection__item">Nuova Playlist</li>
+                            <li class="playlist-selection__item">Nuova Playlist</li>
+                            <li class="playlist-selection__item">Nuova Playlist</li>
+                            <li class="playlist-selection__item">Nuova Playlist</li>
+                            <li class="playlist-selection__item">Nuova Playlist</li>
+                            <li class="playlist-selection__item">Nuova Playlist</li>
                         </ul>
                     </div>
-                    <div class="personal">
-                        <div class="app">
-                            <a href="#" class="install-app">
-                                <i class="far fa-arrow-alt-circle-down"></i>Installa app
+                    
+                    <div class="aside__bottom">
+                        <div class="app-download">
+                            <a href="#" class="app-download__link">
+                                <i class="far fa-arrow-alt-circle-down app-download__icon"></i>Installa app
                             </a>
                         </div>
-                        <div class="user">
-                            <img src="./img/profile.svg" alt="" class="user-image">
-                            <div class="user-name">John Doe</div>
+                        <div class="profile">
+                            <img src="./img/profile.svg" alt="" class="profile__image">
+                            <div class="profile__name">John Doe</div>
                         </div>
                     </div>
-                </div>
             </aside>
             <!-- /sidebar -->
 
@@ -144,6 +146,7 @@
             </section>
             <!-- /music choices -->
         </main>
+        <!-- /Main -->
 
         <footer></footer>
         

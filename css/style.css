@@ -147,10 +147,10 @@ main{
 
 /* Music Section */
 
-.music{
+.container{
     position: relative;
     height: 100%;
-    background-color: cadetblue;
+    background-color: #141922;
     width: calc(100% - 230px);
     overflow-y: auto;
 }
@@ -178,6 +178,34 @@ main{
     border: 1px solid #ffffff;
     border-radius: 2rem;
 }
+
+.horizontal-nav{
+    margin-top: 90px;
+    padding: 18px;
+}
+
+.horizontal-nav__list{
+    display: flex;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.horizontal-nav__item{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.horizontal-nav__link{
+    position: relative;
+    text-transform: uppercase;
+    color: #a3a3a3;
+    padding: 10px;
+}
+
 
 /* Footer */
 

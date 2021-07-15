@@ -194,7 +194,6 @@ main{
 }
 
 .horizontal-nav__item{
-    position: relative;
     display: inline-block;
     margin-bottom: 15px;
 }
@@ -216,6 +215,40 @@ main{
     background-color: #adff2f;
     height: 2px;
     width: 30px;
+}
+
+h2{
+    color: #ffffff;
+}
+
+.albums{
+    padding: 20px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    margin-top: 25px;
+    padding: 3px;
+    text-align: center;
+}
+
+.card__image{
+    height: 180px;
+    width: 180px;
+    background-color: coral;
+}
+.card__title{
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.card__subtitle{
+    margin-top: 15px;
+    color:#a3a3a3
 }
 
 

@@ -217,22 +217,30 @@ main{
     width: 30px;
 }
 
-h2{
-    color: #ffffff;
-}
+/* Album */
 
 .albums{
-    padding: 20px;
+    margin: 30px;
+}
+
+.albums__title{
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.albums__subtitle{
+    font-size: 14px;
+    font-weight: 600;
+    color: #a3a3a3;
 }
 
 .row{
     display: flex;
-    justify-content: space-between;
 }
 
 .card{
     margin-top: 25px;
-    padding: 3px;
+    padding: 6px;
     width: calc(100% / 6);
     text-align: center;
 }

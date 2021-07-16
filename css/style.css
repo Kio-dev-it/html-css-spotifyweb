@@ -10,6 +10,9 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #a3a3a3;
 }
 
 a{
@@ -19,6 +22,18 @@ a{
 
 ul{
     list-style: none;
+}
+
+/*  typo */
+
+h2{
+    color: #ffffff;
+    font-size: 1.75rem;
+}
+
+h4{
+    color: #ffffff;
+    font-size: 1rem;
 }
 
 
@@ -36,9 +51,6 @@ main{
     background-color: #000000;
     width: 230px;
     padding-top: 20px;
-    font-size: 12px;
-    color: #a3a3a3;
-    font-weight: 600;
 }
 
 .logo,
@@ -108,7 +120,7 @@ main{
     left: 50%;
     transform: translate(-50%, -50%);
     color: #000000;
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 .playlist-selection{
@@ -171,7 +183,6 @@ main{
 
 .upgrade__link{
     padding: 10px 45px;
-    font-size: 12px;
     font-weight: 800;
     color: #ffffff;
     text-transform: uppercase;
@@ -187,8 +198,6 @@ main{
 .horizontal-nav__list{
     display: flex;
     width: 100%;
-    font-size: 12px;
-    font-weight: 600;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -201,7 +210,6 @@ main{
 .horizontal-nav__link{
     position: relative;
     text-transform: uppercase;
-    color: #a3a3a3;
     padding: 10px;
 }
 
@@ -224,14 +232,11 @@ main{
 }
 
 .albums__title{
-    color: #ffffff;
     margin-bottom: 15px;
 }
 
 .albums__subtitle{
-    font-size: 14px;
-    font-weight: 600;
-    color: #a3a3a3;
+    font-size: 0.875rem;
 }
 
 .row{
@@ -256,12 +261,10 @@ main{
 
 .card__title{
     margin-top: 20px;
-    color: #ffffff;
 }
 
 .card__subtitle{
     margin-top: 15px;
-    color:#a3a3a3
 }
 
 
@@ -280,7 +283,6 @@ footer{
 }
 
 .footer-left, .footer-right{
-    color:#a3a3a3;
     width: 230px;
     padding : 25px 10px 25px 10px;
 }
@@ -301,7 +303,6 @@ footer{
 
 .playing__text{
     width: 50%;
-    font-weight: 600;
     padding-left: 6px;
 }
 
@@ -311,7 +312,7 @@ footer{
 
 .playing__icons{
     width:30%;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .fa-heart{
@@ -328,13 +329,10 @@ footer{
 
 .playing__logo, .playing__text, .playing__icons{
     display: inline-block;
-    font-size: 12px;
 }
 
 .player{
     width: 45%;
-    font-size: 12px;
-    font-weight: 600;
     color: #ffffff;
 }
 
@@ -342,7 +340,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-top: 10px;
 }
 
@@ -351,7 +349,7 @@ footer{
 }
 
 .fa-play-circle{
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .player__time{
@@ -390,6 +388,6 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #ffffff;
 }

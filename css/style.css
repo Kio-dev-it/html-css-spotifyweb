@@ -24,6 +24,13 @@ ul{
     list-style: none;
 }
 
+button{
+    text-decoration: none;
+    border: none;
+    background: none;
+    font-family: inherit;
+}
+
 /*  typo */
 
 h2{
@@ -105,6 +112,7 @@ main{
 
 .playlist__title{
     margin-bottom: 18px;
+    font-weight: 800;
     color: #fff;
 }
 
@@ -165,6 +173,7 @@ main{
 
 .profile__name{
     display: inline-block;
+    color: #ffffff;
 }
 
 /* Music Section */
@@ -261,6 +270,10 @@ main{
     text-align: center;
 }
 
+.card__top{
+    position: relative;
+}
+
 .card__top--circle{
     border-radius: 50%;
     overflow: hidden;
@@ -268,6 +281,7 @@ main{
 
 .card__image{
     width: 100%;
+    display: block;
 }
 
 .card__title{
@@ -379,7 +393,7 @@ footer{
     border-radius: 4px;
 }
 
-.slider::after{
+.slider__progress{
     content: '';
     display: block;
     position: absolute;
@@ -401,4 +415,104 @@ footer{
     justify-content: space-between;
     font-size: 0.875rem;
     color: #ffffff;
+}
+
+.list-icon__item,
+.playlist__create,
+.playlist-selection__item,
+.card__top,
+.card__title,
+.card__subtitle,
+footer i,
+.slider,
+.playing__artist,
+.playing__song {
+    cursor: pointer;
+}
+
+/* hover effects*/
+
+
+/* Aside hover */ 
+
+.list-icon__item:hover .list-icon__label{
+    color: #ffffff;
+}
+
+.playlist__create:hover{
+    color: #ffffff;
+}
+
+.playlist__create:hover .playlist__icon{
+    background-color: #ffffff;
+}
+
+
+.playlist-selection__item:hover{
+    color: #ffffff;
+}
+
+.app-download:hover .app-download__label{
+    color: #ffffff;
+}
+
+
+/* container hover */
+
+.upgrade__button:hover { 
+    transform: scale(1.1);
+}
+
+.horizontal-nav__item:hover .horizontal-nav__link{
+    color: #ffffff;
+}
+
+.card:hover .card__top::after{
+    content:"\f144";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    font-size: 3.125rem;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* footer hover */
+
+.playing__song:hover{
+    text-decoration: underline;
+}
+
+footer .fa-heart:hover, footer .fa-folder:hover{
+    color: #ffffff;
+}
+
+.player__control .fa-play-circle:hover{
+    transform: scale(1.1);
+}
+
+
+.slider:hover .slider__progress{
+    background-color: #adff2f;
+}
+
+.slider:hover.slider::after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    top: calc(50% - 7px);
+    left: calc(25% - 7px);
+    background-color: #ffffff;
+    border-radius: 50%;
 }

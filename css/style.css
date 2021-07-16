@@ -279,10 +279,14 @@ footer{
     background-color: #282828;
 }
 
-.footer-left{
+.footer-left, .footer-right{
     color:#a3a3a3;
     width: 230px;
-    padding : 25px 0 25px 10px;
+    padding : 25px 10px 25px 10px;
+}
+
+.player{
+    width:45%;
 }
 
 .playing{
@@ -325,4 +329,67 @@ footer{
 .playing__logo, .playing__text, .playing__icons{
     display: inline-block;
     font-size: 12px;
+}
+
+.player{
+    width: 45%;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.player__control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.player__control i {
+    margin: 0 10px;
+}
+
+.fa-play-circle{
+    font-size: 32px;
+}
+
+.player__time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+}
+
+.slider{
+    position: relative;
+    content: '';
+    background-color: #5a5a5a;
+    width: 60%;
+    height: 4px;
+    border-radius: 4px;
+}
+
+.slider::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.time{
+    margin: 0 15px;
+}
+
+.footer-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #ffffff;
 }

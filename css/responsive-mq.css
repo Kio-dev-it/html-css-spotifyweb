@@ -96,3 +96,75 @@
         height: 75%;
     }
 }
+
+@media screen and (max-width: 420px){
+
+    main{
+        height: calc(100vh - 110px);
+    }
+
+    .card{
+        width: 100%;
+        padding: 20px;
+    }
+
+    footer{
+        height: 110px;
+    }
+
+    .footer-left, .footer-right{
+        padding: 10px;
+        width: 200px;
+    }
+
+    
+
+    .playing{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .playing__logo{
+        height: 40%;
+        width: 100%;
+        text-align: center;
+        order:1;
+    }
+    
+    .playing__text{
+        width: 100%;
+        margin-top: 2px;
+        padding-left: 0;
+        text-align: center;
+        font-size: 0.625rem;
+    }
+
+    .playing__icons{
+        margin-top: 3px;
+        padding-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .player__control{
+        margin: 15px 0;
+    }
+
+    .time{
+        margin: 0 5px;
+    }
+
+    .footer-right{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-content: space-evenly;
+    }
+
+    .command, .volume{
+        margin-left: 10px;
+        width: 100%;
+    }
+
+    
+}

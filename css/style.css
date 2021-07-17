@@ -414,9 +414,23 @@ footer{
 .footer-right{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-size: 0.875rem;
     color: #ffffff;
+}
+
+.command{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+
+.volume{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .list-icon__item,

@@ -223,13 +223,13 @@ main{
     color: rgb(255, 255, 255);
 }
 
-.upgrade__link{
-    padding: 10px 45px;
-    font-weight: 800;
-    color: #ffffff;
+.upgrade__button{
+    color: #fff;
     text-transform: uppercase;
+    font-weight: 800;
     border: 1px solid #ffffff;
     border-radius: 2rem;
+    padding: 10px 45px;
 }
 
 .horizontal-nav{
